@@ -57,9 +57,25 @@
 		D59EF73F283B644700D94103 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				D59EF748283B676000D94103 /* src */,
 				D59EF740283B644700D94103 /* main.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		D59EF748283B676000D94103 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D59EF749283B676F00D94103 /* models */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D59EF749283B676F00D94103 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
