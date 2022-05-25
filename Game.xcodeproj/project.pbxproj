@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D59EF741283B644700D94103 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59EF740283B644700D94103 /* main.swift */; };
+		D5F49A0E283DFB8A007C60DA /* character.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F49A0D283DFB8A007C60DA /* character.swift */; };
+		D5F49A12283E01BA007C60DA /* warrior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F49A11283E01BA007C60DA /* warrior.swift */; };
+		D5F49A14283E0B78007C60DA /* magus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F49A13283E0B78007C60DA /* magus.swift */; };
+		D5F49A16283E0B95007C60DA /* colossus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F49A15283E0B95007C60DA /* colossus.swift */; };
+		D5F49A19283E0BC4007C60DA /* dwarf.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F49A18283E0BC4007C60DA /* dwarf.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		D59EF73D283B644700D94103 /* Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Game; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59EF740283B644700D94103 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D5F49A0D283DFB8A007C60DA /* character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = character.swift; sourceTree = "<group>"; };
+		D5F49A11283E01BA007C60DA /* warrior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = warrior.swift; sourceTree = "<group>"; };
+		D5F49A13283E0B78007C60DA /* magus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = magus.swift; sourceTree = "<group>"; };
+		D5F49A15283E0B95007C60DA /* colossus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colossus.swift; sourceTree = "<group>"; };
+		D5F49A18283E0BC4007C60DA /* dwarf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dwarf.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +84,21 @@
 		D59EF749283B676F00D94103 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				D5F49A17283E0BB4007C60DA /* New Group */,
+				D5F49A0D283DFB8A007C60DA /* character.swift */,
+				D5F49A11283E01BA007C60DA /* warrior.swift */,
+				D5F49A13283E0B78007C60DA /* magus.swift */,
+				D5F49A15283E0B95007C60DA /* colossus.swift */,
+				D5F49A18283E0BC4007C60DA /* dwarf.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		D5F49A17283E0BB4007C60DA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5F49A19283E0BC4007C60DA /* dwarf.swift in Sources */,
+				D5F49A16283E0B95007C60DA /* colossus.swift in Sources */,
 				D59EF741283B644700D94103 /* main.swift in Sources */,
+				D5F49A0E283DFB8A007C60DA /* character.swift in Sources */,
+				D5F49A12283E01BA007C60DA /* warrior.swift in Sources */,
+				D5F49A14283E0B78007C60DA /* magus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
