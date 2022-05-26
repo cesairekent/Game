@@ -7,11 +7,11 @@
 
 import Foundation
 
-class Warrior : Character
-{
-    init(warriorName: String)
-    {
-        super.init(name: warriorName, weapon: 10, life: 100)
-    }
-}
+//class Warrior : Character
+//{
+//    init(warriorName: String)
+//    {
+//        super.init(name: warriorName, weapon: 10, life: 100)
+//    }
+//}
 

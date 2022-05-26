@@ -7,9 +7,17 @@
 
 import Foundation
 
+enum CharacterType{
+    case Colossus
+    case Dwarf
+    case Magus
+    case Warrior
+}
+
 class Character
 {
     var name: String
+    var type: CharacterType
     var weapon: Int = 0
     var life: Int = 0
     var isAlive: Bool{
@@ -18,10 +26,34 @@ class Character
         }
     }
     
-    init(name: String, weapon: Int, life: Int)
+    init(name: String, type: CharacterType)
     {
         self.name = name
-        self.weapon = weapon
-        self.life = life
+        self.type = type
+        
+        switch type {
+        case .Colossus:
+            self.life = 200
+            self.weapon = 7
+        case .Dwarf:
+            self.life = 75
+            self.weapon = 20
+        case .Magus:
+            self.life = 150
+            self.weapon = 5
+        case .Warrior:
+            self.life = 100
+            self.weapon = 10
+        }
     }
+    
+    func attack(){
+        
+    }
+    
+    func getDamage(damage: Int)
+    {
+        self.life -= damage
+    }
+    
 }

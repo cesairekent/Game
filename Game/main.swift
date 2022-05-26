@@ -7,9 +7,8 @@
 
 import Foundation
 
-var character = Warrior(warriorName: "Arthur")
-
 print("Hello, World!")
-print("life is : \(character.life) weapon attack : \(character.weapon) the warriorname: \(character.name) and is alive : \(character.isAlive)")
+//var character = Warrior(warriorName: "Arthur")
+//print("life is : \(character.life) weapon attack : \(character.weapon) the warriorname: \(character.name) and is alive : \(character.isAlive)")
 
 

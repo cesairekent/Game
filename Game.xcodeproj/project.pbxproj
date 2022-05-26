@@ -84,7 +84,6 @@
 		D59EF749283B676F00D94103 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				D5F49A17283E0BB4007C60DA /* New Group */,
 				D5F49A0D283DFB8A007C60DA /* character.swift */,
 				D5F49A11283E01BA007C60DA /* warrior.swift */,
 				D5F49A13283E0B78007C60DA /* magus.swift */,
@@ -92,13 +91,6 @@
 				D5F49A18283E0BC4007C60DA /* dwarf.swift */,
 			);
 			path = models;
-			sourceTree = "<group>";
-		};
-		D5F49A17283E0BB4007C60DA /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
