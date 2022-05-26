@@ -7,10 +7,10 @@
 
 import Foundation
 
-class Colossus : Character
-{
-    init(colossusName: String)
-    {
-        super.init(name: colossusName, weapon: 8, life: 200)
-    }
-}
+//class Colossus : Character
+//{
+//    init(colossusName: String)
+//    {
+//        super.init(name: colossusName, weapon: 8, life: 200)
+//    }
+//}
