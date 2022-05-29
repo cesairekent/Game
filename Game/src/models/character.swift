@@ -7,11 +7,15 @@
 
 import Foundation
 
-protocol Character {
+protocol Character
+{
     var name: String {get set}
     var weapon: Int {get set}
     var life: Int {get set}
+    
+    var isAlive: Bool {get}
 }
+
 //
 //enum CharacterType{
 //    case Colossus
