@@ -12,17 +12,18 @@ class Game
     //Create team 01
     func createCharacter()
     {
-        var team01: [Character]
-        //var name: String
+        var team01: [Character] = []
+        var currentName: String = ""
         
         while let input = readLine() {
             guard input != "" else {
                 break
             }
 
-            if team01.contains(where: {$0.name == input})//(input)
+            if (team01.contains(where: {$0.name == input}))//(input)
             {
                 //inputArray.append(input)
+                currentName = input
                 print("You entered: \(input)")
             } else {
                 print("Negative. \"\(input)\" already exits")
@@ -32,7 +33,6 @@ class Game
             print("Enter a word:")
         }
 
-        
 //        while(name.isEmpty){
 //            print("Enter your character name")
 //
@@ -44,6 +44,7 @@ class Game
 //                name = tempName
 //            }
 //        }
+        
         print("""
             Select your character class
             1. Colossus :
@@ -54,7 +55,7 @@ class Game
         if let typeIndex = readLine()
         {
             if(typeIndex == "1"){
-                var char = Colossus(name: name)
+                var char = Colossus(name: currentName)
                 team01.append(char)
             }else{
                 print("Invalid selection")
