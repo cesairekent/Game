@@ -7,10 +7,19 @@
 
 import Foundation
 
-//class Colossus : Character
-//{
-//    init(colossusName: String)
-//    {
-//        super.init(name: colossusName, weapon: 8, life: 200)
-//    }
-//}
+class Colossus : Character
+{
+    var name: String
+    var life: Int
+    var weapon: Int
+    var isAlive: Bool{
+        get{return life > 0 }
+    }
+    
+    init(name:String)
+    {
+        self.name = name
+        self.life = 200
+        self.weapon = 8
+    }
+}

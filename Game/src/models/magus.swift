@@ -7,16 +7,19 @@
 
 import Foundation
 
-//class Magus : Character
-//{
-//    var heal: Int = 10
-//    
-//    init(magusName: String)
-//    {
-//        super.init(name: magusName, weapon: 5, life: 150)
-//    }
-//    
-//    func healCharacter(){
-//        
-//    }
-//}
+class Magus : Character
+{
+    var name: String
+    var life: Int
+    var weapon: Int
+    var isAlive: Bool{
+        get{return life > 0 }
+    }
+
+    init(name:String)
+    {
+        self.name = name
+        self.life = 150
+        self.weapon = 7
+    }
+}
