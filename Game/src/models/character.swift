@@ -14,46 +14,44 @@ enum CharacterType{
     case Warrior
 }
 
-class Character
+protocol Character
 {
-    var name: String
-    var type: CharacterType
-    var weapon: Int = 0
-    var life: Int = 0
-    var isAlive: Bool{
+    var name: String { get set }
+    var type: CharacterType { get set }
+    var weapon: Int { get set }
+    var life: Int { get set }
+    extension isAlive: Bool{
         get{
             return life > 0
         }
     }
     
     init(name: String, type: CharacterType)
-    {
-        self.name = name
-        self.type = type
-        
-        switch type {
-        case .Colossus:
-            self.life = 200
-            self.weapon = 7
-        case .Dwarf:
-            self.life = 75
-            self.weapon = 20
-        case .Magus:
-            self.life = 150
-            self.weapon = 5
-        case .Warrior:
-            self.life = 100
-            self.weapon = 10
-        }
-    }
+    //{
+//        self.name = name
+//        self.type = type
+//
+//        switch type {
+//        case .Colossus:
+//            self.life = 200
+//            self.weapon = 7
+//        case .Dwarf:
+//            self.life = 75
+//            self.weapon = 20
+//        case .Magus:
+//            self.life = 150
+//            self.weapon = 5
+//        case .Warrior:
+//            self.life = 100
+//            self.weapon = 10
+//        }
+    //}
     
-    func attack(){
-        
-    }
+    func attack()//{}
     
     func getDamage(damage: Int)
-    {
-        self.life -= damage
-    }
+//    {
+//        self.life -= damage
+//    }
     
 }

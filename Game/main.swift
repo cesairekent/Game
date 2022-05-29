@@ -8,9 +8,30 @@
 import Foundation
 
 class Game{
+    
+    
+    
     //Create team 01
     func createCharacter(){
         var name: String
+        
+        
+//        while let input = readLine() {
+//            guard input != "quit" else {
+//                break
+//            }
+//
+//            if !inputArray.contains(input) {
+//                inputArray.append(input)
+//                print("You entered: \(input)")
+//            } else {
+//                print("Negative. \"\(input)\" already exits")
+//            }
+//
+//            print()
+//            print("Enter a word:")
+//        }
+
         
         while(name.isEmpty){
             print("Enter your character name")
