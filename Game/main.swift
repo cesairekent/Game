@@ -5,11 +5,10 @@
 //  Created by MiniTitan on 23/05/2022.
 //
 
-import Foundation
+import Foundation 
 
-class Game{
-    
-    
+class Game
+{
     //Create team 01
     func createCharacter()
     {
