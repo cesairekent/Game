@@ -1,11 +1,17 @@
-////
-////  character.swift
-////  Game
-////
-////  Created by MiniTitan on 25/05/2022.
-////
 //
-//import Foundation
+// character.swift
+// Game
+//
+//  Created by MiniTitan on 25/05/2022.
+//
+
+import Foundation
+
+protocol Character {
+    var name: String {get set}
+    var weapon: Int {get set}
+    var life: Int {get set}
+}
 //
 //enum CharacterType{
 //    case Colossus
