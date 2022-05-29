@@ -55,7 +55,7 @@ class Game
         if let typeIndex = readLine()
         {
             if(typeIndex == "1"){
-                var char = Colossus(name: currentName)
+                let char = Colossus(name: currentName)
                 team01.append(char)
             }else{
                 print("Invalid selection")
