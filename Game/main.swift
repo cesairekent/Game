@@ -10,11 +10,10 @@ import Foundation
 class Game{
     
     
-    
     //Create team 01
-    func createCharacter(){
+    func createCharacter()
+    {
         var name: String
-        
         
 //        while let input = readLine() {
 //            guard input != "quit" else {
@@ -45,15 +44,16 @@ class Game{
             }
         }
         print("""
-            Select ypur character class
+            Select your character class
             1. Colossus :
-            2. Dwarf
-            3. Magus
-            4. Warrior
+            2. Dwarf :
+            3. Magus :
+            4. Warrior :
             """)
-        if let typeIndex = readLine(){
+        if let typeIndex = readLine()
+        {
             if(typeIndex == "1"){
-                var char = Character(name: name, type: CharacterType.Colossus)
+                var char = Colossus(name: name)
             }else{
                 print("Invalid selection")
             }
