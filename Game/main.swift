@@ -9,10 +9,19 @@ import Foundation
 
 class Game
 {
+    var team01: [Character]
+    var team02: [Character]
+    
+    init(){
+        team01 = []
+        team02 = []
+        
+        createCharacter()
+    }
+    
     //Create team 01
     func createCharacter()
     {
-        var team01: [Character] = []
         var currentName: String = ""
         
         while let input = readLine() {
@@ -20,7 +29,7 @@ class Game
                 break
             }
 
-            if (!team01.contains(where: {$0.name == input}))//(input)
+            if (!team01.contains(where: {$0.name == input}) || !team02.contains(where: {$0.name == input}))
             {
                 //inputArray.append(input)
                 currentName = input
@@ -30,7 +39,7 @@ class Game
             }
 
             print()
-            print("Enter a word:")
+            print("Enter your character name:")
         }
         
         print("""
@@ -39,7 +48,8 @@ class Game
             2. Dwarf :
             3. Magus :
             4. Warrior :
-            """)
+            """
+        )
         if let typeIndex = readLine()
         {
             switch (typeIndex) {
