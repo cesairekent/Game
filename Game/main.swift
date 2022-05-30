@@ -20,7 +20,7 @@ class Game
                 break
             }
 
-            if (team01.contains(where: {$0.name == input}))//(input)
+            if (!team01.contains(where: {$0.name == input}))//(input)
             {
                 //inputArray.append(input)
                 currentName = input
@@ -32,18 +32,6 @@ class Game
             print()
             print("Enter a word:")
         }
-
-//        while(name.isEmpty){
-//            print("Enter your character name")
-//
-//
-//            var tempName = readLine()
-//            if(tempName == nil){
-//                print("Invalid Character name please retry")
-//            }else{
-//                name = tempName
-//            }
-//        }
         
         print("""
             Select your character class
@@ -54,10 +42,16 @@ class Game
             """)
         if let typeIndex = readLine()
         {
-            if(typeIndex == "1"){
-                let char = Colossus(name: currentName)
-                team01.append(char)
-            }else{
+            switch (typeIndex) {
+            case "1":
+            team01.append(Colossus(name: currentName))
+            case "2":
+                team01.append(Dwarf(name: currentName))
+            case "3":
+                team01.append(Magus(name: currentName))
+            case "4":
+                team01.append(Warrior(name: currentName))
+            default :
                 print("Invalid selection")
             }
         }
