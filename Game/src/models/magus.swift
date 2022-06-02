@@ -22,4 +22,9 @@ class Magus : Character
         self.life = 150
         self.weapon = 7
     }
+    
+    func heal()
+    {
+        print("heal character")
+    }
 }
