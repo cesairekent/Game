@@ -21,4 +21,23 @@ class PrintUtils
             """
         )
     }
+    
+    static func printCharacterTeam(team: [Character])
+    {
+        print()
+        for characterIndex in 1...team.count
+        {
+            print("\(characterIndex). \(team[characterIndex].name)")
+        }
+    }
+    
+    static func printAction(){
+        print()
+        print(
+            """
+            1. Attack
+            2. Heal
+            """
+        )
+    }
 }
